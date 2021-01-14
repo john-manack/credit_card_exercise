@@ -1,0 +1,67 @@
+<!-- Create a form that allows a user to enter information to make a credit card purchase.
+
+Search the internet for examples.
+Should at least contain fields for: (use the correct types for 'input' fields to ensure proper data is entered)
+Name
+Email
+Card number
+Expiration date
+Security code
+Must use fieldset elements
+Must contain labels -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Exercise</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+<body>
+    <h1 class="is-size-3">Credit Card Information Entry</h1>
+    <form>
+        <fieldset>
+            <legend class="is-size-4">
+                To proceed with your purchase, please enter your credit card information below. 
+            </legend>
+
+            <div class="field">
+                <label class="label" for="name">Cardholder Name</label>
+                <div class="control">
+                    <input class="input" type="text" name="name" placeholder="Enter your name as it appears on your credit card" id="name">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="email">Email Address</label>
+                <div class="control">
+                    <input class="input" type="email" name="email" placeholder="Enter your email address" id="email">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="cardNumber">Credit Card Number</label>
+                <div class="control">
+                    <input class="input" type="text" name="cardNumber" placeholder="Enter your credit card number" id="cardNumber">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="cardExpDate">Expiration date</label>
+                <div class="control">
+                    <input class="input" type="text" name="cardExpDate" placeholder="(mm/dd)" id="cardExpDate">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="cardSecurityCode">Security Code</label>
+                <div class="control">
+                    <input class="input" type="text" name="cardSecurityCode" placeholder="3-4 digits" id="cardSecurityCode">
+                </div>
+            </div>
+        </fieldset>
+        <input type="submit" id="submit-button" value="submit"/>
+    </form>
+</body>
+</html>
